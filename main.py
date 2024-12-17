@@ -2,7 +2,7 @@ from classPerson import Person
 from classPerson import User
 from classPerson import Employee
 
-from login import id_validation
+from login import cpf_validation
 from login import email_validation
 from login import registration_id_validation
 from login import password_validation
@@ -29,9 +29,10 @@ while True:
 
     if option == 1:
         name = input("|Digite seu nome:")
-        id = input("|Digite seu id:")
-        if not id_validation(id):
-            print("|Erro, id invalido")
+        
+        cpf = input("|Digite seu cpf:")
+        if not cpf_validation(cpf):
+            print("|Erro, cpf invalido")
             continue
 
         age = input("|Digite sua idade:")
