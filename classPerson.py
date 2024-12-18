@@ -25,13 +25,3 @@ class User(Person):
 
 #cria uma classe usuario que herda de pessoa.         
 
-class Employee(Person):
-    def __init__(self, name, id, age, registration_id, password):
-        super().__init__(name, id, age)
-        self.__registration_id = registration_id
-        self.__password = password
-    
-    def getRegistrationid(self):
-        return self.__registration_id
-
-#cria uma classe empregado que herda de pessoa.        

@@ -1,13 +1,13 @@
 from classPerson import Person
 from classPerson import User
-from classPerson import Employee
+
 
 from login import cpf_validation
 from login import email_validation
-from login import registration_id_validation
+
 from login import password_validation
 from login import users
-from login import employees
+
 #importa funções
 
 while True:
@@ -82,29 +82,4 @@ while True:
     #encerra progama
     
 
-    elif option == 4:
-        registration_id = input("|Digite sua matricula:")
-        if not registration_id_validation(registration_id):
-            print("|matricula invalida")
-            continue
-
-        password = input("|Digite sua senha:")
-        if not password_validation(password):
-            print("|Senha invalida")
-            continue
-
-        if employees:
-            employee_found = None
-            for f in employees:
-                if f.getRegistrationid() == registration_id and f.getPassword == password:
-                    employee_found = f
-                    break
-            if employee_found:
-                print(f"|Bem vindo {employee_found.getName} ")
-            else:
-                print("|matricula ou senha incorretas")
-        else:
-            print("|Nenhum funcionario cadastrado.")
-    #login como usuario tendo verificaçao de email e senha
-
-        
+ 
