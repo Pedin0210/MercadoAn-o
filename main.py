@@ -16,7 +16,7 @@ while True:
     print("|    Digite 1 para se Cadastrar       |")
     print("|    Digite 2 para logar como cliente |")
     print("|    Digite 3 para Sair               |")
-    print("|    Digite 4 se for funcionario      |")
+    
 #printa as opçoes
     try:
         option = int(input("|Digite a ação om base na tabela acima:"))
