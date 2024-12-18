@@ -19,7 +19,7 @@ while True:
     
 #printa as opçoes
     try:
-        option = int(input("|Digite a ação om base na tabela acima:"))
+        option = int(input("|Digite a ação com base na tabela acima:"))
     except ValueError:
         print("|Digite um numero valido!")
 
@@ -44,15 +44,8 @@ while True:
 
         password = input("|Digite a senha para este conta:")
 
-        for c in users:
-            if c.getid() == id:
-                print("|id já cadastrado")
-                break
-            if c.getEmail() == email:
-                print("|Email ja cadastrado")
-                break
-        
-        newUser = User(name, id, age, email, password)
+       
+        newUser = User(name, cpf, age, email, password)
         users.append(newUser)
     #cadastro com validaçao de email e senha
 
